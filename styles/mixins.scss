@@ -1,0 +1,23 @@
+@mixin  button {
+    border:none;
+    outline:none;
+    background-color: transparent;
+    background: -webkit-linear-gradient(45deg, #410b4c, #a921efd9);
+    cursor: pointer;
+    padding:1rem 2rem;
+    border-radius: 3px;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: rgb(53, 25, 144) 0px 0px 15px 0;
+    }
+}
+
+@mixin base_text_title {
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: Roboto;
+    text-transform: uppercase;
+    color: $color-text-h2;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}

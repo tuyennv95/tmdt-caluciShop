@@ -1,0 +1,26 @@
+.license{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    background-color:rgb(24, 11, 62);
+    opacity: 0.8;
+    span{
+        padding-left: 2rem;
+        padding-top:2rem;
+        padding-bottom:2rem;
+        font-size: 1.2rem;
+        color:$font-color;
+    }
+    .license__link{
+        padding:2rem;
+        display: flex;
+        i{
+            color: $font-color;
+            font-size:1.2rem;
+
+        }
+        i + i{
+            margin-left:2rem;
+        }
+    }
+}

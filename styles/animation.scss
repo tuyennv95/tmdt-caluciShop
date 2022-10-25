@@ -1,0 +1,62 @@
+@keyframes hover-acc {
+  0% {
+    top: 10rem;
+    opacity: 0;
+  }
+  100% {
+    top: 150%;
+    opacity: 1;
+  }
+}
+@keyframes onmouseout {
+  0% {
+    top: 150%;
+    opacity: 1;
+  }
+  100% {
+    top: 10rem;
+    opacity: 0;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+
+ 
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 25%;
+  }
+  50% {
+    left: 50%;
+  }
+  75% {
+    left: 75%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes product-price{
+  0%{
+    font-size: 1rem;
+    opacity: 0.1;
+
+  }
+  
+  100%{
+    font-size: 1.3rem;
+    opacity: 1;
+    transform: translateY(-60px);
+  }
+}

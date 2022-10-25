@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="build/index.css" />
+    <title>CaFiNa</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header__logo">
+        <a href=""
+          ><img src="img/logo.png" alt="" class="header__logo--img"
+        /></a>
+      </div>
+      <div class="header__menu">
+        <ul class="header__menu--list">
+          <li class="header__menu--item">
+            <a class="header__menu--item--link" href="">Trang chủ</a>
+          </li>
+          <li class="header__menu--item">
+            <a class="header__menu--item--link" href="">của hàng</a>
+          </li>
+          <li class="header__menu--item">
+            <a class="header__menu--item--link" href="">tài khoản</a>
+          </li>
+          <li class="header__menu--item">
+            <a class="header__menu--item--link" href="">giỏ hàng</a>
+          </li>
+          <li class="header__menu--item">
+            <a class="header__menu--item--link" href="">liên hệ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__other">
+        <div class="header__other-block">
+          <div class="header__other_input">
+            <input type="text" placeholder="Tìm kiếm..." />
+          </div>
+          <div class="header__other_cart">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          </div>
+          <div class="header__other_acc">
+            <img class="header_other_acc--img" src="img/acc.jpg" alt="" />
+
+            <div class="hover_acc--img" id="hover_acc--img">
+              <ul class="hover_acc--img-list">
+                <li class="hover_acc--img-item">
+                  <i class="fa fa-user-o" aria-hidden="true"></i>
+                  <span class="item--link">Hồ sơ</span>
+                </li>
+                <li class="hover_acc--img-item">
+                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                  <span class="item--link">Chỉnh sửa hồ sơ</span>
+                </li>
+                <li class="hover_acc--img-item">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                  <span class="item--link">Cài đặt tài khoản</span>
+                </li>
+                <li class="hover_acc--img-item">
+                  <i class="fa fa-power-off" aria-hidden="true"></i>
+                  <span class="item--link">Đăng xuất</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="slider__font">
+        <img src="img/slider__font.jpg" class="slider__font--img" />
+      </div>
+      <h1>
+        Sự lựa chọn cho <br />
+        mọi sở thích
+      </h1>
+      <div class="slider__slide">
+        <div class="slider__slide--opacity">&nbsp;</div>
+        <div class="slider__slide--item">
+          <img
+            class="slider__slide--img"
+            src="img/slide10.jpg"
+            id="classLast"
+          />
+
+          <img class="slider__slide--img" src="img/slide6.jpg" />
+
+          <img class="slider__slide--img" src="img/slide7.jpg" />
+
+          <img class="slider__slide--img" src="img/slide8.jpg" />
+
+          <img class="slider__slide--img" src="img/slide9.jpg" />
+
+          <img class="slider__slide--img" src="img/slide10.jpg" />
+
+          <img
+            class="slider__slide--img"
+            src="img/slide6.jpg"
+            id="classFirst"
+          />
+        </div>
+
+        <button id="next">
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </button>
+        <button id="prev">
+          <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+        </button>
+      </div>
+    </section>
+    <section class="introduce">
+      <div class="introduce__slider">
+        <div class="introduce__slider_img">
+          <img
+            src="img/slide5.jpg"
+            alt=""
+            class="introduce__slider_img--item"
+            id="imgIntroduceLast"
+          />
+          <img
+            src="img/slide1.jpg"
+            alt=""
+            class="introduce__slider_img--item"
+          />
+          <img
+            src="img/slide2.jpg"
+            alt=""
+            class="introduce__slider_img--item"
+          />
+          <img
+            src="img/slide3.jpg"
+            alt=""
+            class="introduce__slider_img--item"
+          />
+          <img
+            src="img/slide4.jpg"
+            alt=""
+            class="introduce__slider_img--item"
+          />
+          <img
+            src="img/slide5.jpg"
+            alt=""
+            class="introduce__slider_img--item"
+          />
+          <img
+            src="img/slide1.jpg"
+            alt=""
+            class="introduce__slider_img--item"
+            id="imgIntroduceFirst"
+          />
+        </div>
+        <div class="introduce__slider_dot">
+          <span class="introduce__slider_dot--item">&nbsp;</span>
+          <span class="introduce__slider_dot--item">&nbsp;</span>
+          <span class="introduce__slider_dot--item">&nbsp;</span>
+          <span class="introduce__slider_dot--item">&nbsp;</span>
+          <span class="introduce__slider_dot--item">&nbsp;</span>
+        </div>
+        <button class="introduce__slider_btn introduce__slider_btn--prev">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <button class="introduce__slider_btn introduce__slider_btn--next">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="introduce__text">
+        <h2 class="introduce__text--title">Giới thiệu</h2>
+        <span class="introduce__text--content"
+          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+          repellendus nihil earum facilis totam nulla itaque ratione eligendi
+          sed repellat, officia voluptatum blanditiis amet provident magni dicta
+          consequatur corporis perspiciatis?</span
+        >
+        <button class="introduce__text--btn">Đọc thêm</button>
+      </div>
+    </section>
+    <section class="show">
+      <h2 class="show__title">Sản phẩm mới</h2>
+      <div class="show__product">
+        <!-- ------------------------------- -->
+        <div class="show__product--item">
+          <img src="img/show1.jpg" alt="" class="" />
+          <div class="show__product--item-note">
+            <div class="product--new">New</div>
+            <h2 class="product__name">VESTA DRESS</h2>
+            <span class="product--price">590.000đ</span>
+            <div class="product--plus">
+              <button class="product--plus-buy">Buy</button>
+              <div class="product--plus-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------- -->
+        <div class="show__product--item">
+          <img src="img/show2.jpg" alt="" class="" />
+          <div class="show__product--item-note">
+            <div class="product--new">New</div>
+            <h2 class="product__name">LULI DRESS</h2>
+            <span class="product--price">590.000đ</span>
+            <div class="product--plus">
+              <button class="product--plus-buy">Buy</button>
+              <div class="product--plus-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------- -->
+        <div class="show__product--item">
+          <img src="img/show3.jpg" alt="" class="" />
+          <div class="show__product--item-note">
+            <div class="product--new">New</div>
+            <h2 class="product__name">LOLA DRESS</h2>
+            <span class="product--price">590.000đ</span>
+            <div class="product--plus">
+              <button class="product--plus-buy">Buy</button>
+              <div class="product--plus-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------- -->
+        <div class="show__product--item">
+          <img src="img/show4.jpg" alt="" class="" />
+          <div class="show__product--item-note">
+            <div class="product--new">New</div>
+            <h2 class="product__name">YUYU DRESS</h2>
+            <span class="product--price">590.000đ</span>
+            <div class="product--plus">
+              <button class="product--plus-buy">Buy</button>
+              <div class="product--plus-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------- -->
+        <div class="show__product--item">
+          <img src="img/show5.jpg" alt="" class="" />
+          <div class="show__product--item-note">
+            <div class="product--new">New</div>
+            <h2 class="product__name">rita DRESS</h2>
+            <span class="product--price">590.000đ</span>
+            <div class="product--plus">
+              <button class="product--plus-buy">Buy</button>
+              <div class="product--plus-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------- -->
+        <div class="show__product--item">
+          <img src="img/show6.jpg" alt="" class="" />
+          <div class="show__product--item-note">
+            <div class="product--new">New</div>
+            <h2 class="product__name">LUTA DRESS</h2>
+            <span class="product--price">590.000đ</span>
+            <div class="product--plus">
+              <button class="product--plus-buy">Buy</button>
+              <div class="product--plus-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------- -->
+        <div class="show__product--item">
+          <img src="img/show7.jpg" alt="" class="" />
+          <div class="show__product--item-note">
+            <div class="product--new">New</div>
+            <h2 class="product__name">HOLA DRESS</h2>
+            <span class="product--price">590.000đ</span>
+            <div class="product--plus">
+              <button class="product--plus-buy">Buy</button>
+              <div class="product--plus-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------------- -->
+        <div class="show__product--item">
+          <img src="img/show8.jpg" alt="" class="" />
+          <div class="show__product--item-note">
+            <div class="product--new">New</div>
+            <h2 class="product__name">ROSTIA DRESS</h2>
+            <span class="product--price">590.000đ</span>
+            <div class="product--plus">
+              <button class="product--plus-buy">Buy</button>
+              <div class="product--plus-icon">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="show__plus">Xem thêm</button>
+    </section>
+    <section class="product_hot">
+      <h2 class="product_hot__title">Sản phẩm bán chạy</h2>
+      <div class="product_hot__slider">
+        <div class="product_hot__slider--block">
+          <div class="product_hot__slider--list">
+            <!-- 
+                  <div class="product_hot__slider--item" id="product_hot__slider--item-last">
+                    <img src="img/producthot6.jpg" alt="" class="product_hot__slider--img">
+                    <span class="product_hot__slider--img--name">Mimi</span>
+                    <button class="product_hot__slider--img--button">Xem chi tiết</button>
+
+                  </div> -->
+
+            <div class="product_hot__slider--item">
+              <img src="img/Mimi.jpg" alt="" class="product_hot__slider--img" />
+              <span class="product_hot__slider--img--name">Mimi</span>
+              <button class="product_hot__slider--img--button">
+                Xem chi tiết
+              </button>
+            </div>
+            <div class="product_hot__slider--item">
+              <img
+                src="img/product-hot.jpg"
+                alt=""
+                class="product_hot__slider--img"
+              />
+              <span class="product_hot__slider--img--name">Mimi</span>
+              <button class="product_hot__slider--img--button">
+                Xem chi tiết
+              </button>
+            </div>
+            <div class="product_hot__slider--item">
+              <img
+                src="img/producthot.jpg"
+                alt=""
+                class="product_hot__slider--img"
+              />
+              <span class="product_hot__slider--img--name">Mimi</span>
+              <button class="product_hot__slider--img--button">
+                Xem chi tiết
+              </button>
+            </div>
+            <div class="product_hot__slider--item">
+              <img
+                src="img/product-hot2.jpg"
+                alt=""
+                class="product_hot__slider--img"
+              />
+              <span class="product_hot__slider--img--name">Mimi</span>
+              <button class="product_hot__slider--img--button">
+                Xem chi tiết
+              </button>
+            </div>
+            <div class="product_hot__slider--item">
+              <img
+                src="img/producthot3.jpg"
+                alt=""
+                class="product_hot__slider--img"
+              />
+              <span class="product_hot__slider--img--name">Mimi</span>
+              <button class="product_hot__slider--img--button">
+                Xem chi tiết
+              </button>
+            </div>
+            <div class="product_hot__slider--item">
+              <img
+                src="img/producthot4.jpg"
+                alt=""
+                class="product_hot__slider--img"
+              />
+              <span class="product_hot__slider--img--name">Mimi</span>
+              <button class="product_hot__slider--img--button">
+                Xem chi tiết
+              </button>
+            </div>
+            <div class="product_hot__slider--item">
+              <img
+                src="img/producthot5.jpg"
+                alt=""
+                class="product_hot__slider--img"
+              />
+              <span class="product_hot__slider--img--name">Mimi</span>
+              <button class="product_hot__slider--img--button">
+                Xem chi tiết
+              </button>
+            </div>
+            <div class="product_hot__slider--item">
+              <img
+                src="img/producthot6.jpg"
+                alt=""
+                class="product_hot__slider--img"
+              />
+              <span class="product_hot__slider--img--name">Mimi</span>
+              <button class="product_hot__slider--img--button">
+                Xem chi tiết
+              </button>
+            </div>
+            <!-- <div class="product_hot__slider--item" id="product_hot__slider--item-first">
+                    <img src="img/Mimi.jpg" alt="" class="product_hot__slider--img">
+                    <span class="product_hot__slider--img--name">Mimi</span>
+                    <button class="product_hot__slider--img--button">Xem chi tiết</button>
+                  </div> -->
+          </div>
+        </div>
+
+        <button class="product_hot__slider--prev">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <button class="product_hot__slider--next">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+      <button class="product_hot--plus">Xem thêm</button>
+    </section>
+    <section class="collection">
+      <div class="collection_block">
+        <div class="collection__text">
+          <h2 class="collection__text--title">Collection</h2>
+          <span class="collection__text--content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, id. Eveniet labore quam omnis eos porro iusto ipsam,
+            laudantium autem necessitatibus! Voluptates quis voluptate officiis
+            culpa temporibus facilis nisi ad.
+          </span>
+          <button class="collection__text--button">Đọc thêm</button>
+        </div>
+        <div class="collection__img">
+          <div class="collection__img--image">
+            <div class="collection__img--image-background">
+              <img src="img/collection-img.jpg" alt="" />
+            </div>
+          </div>
+          <div class="collection__img--logo">
+            <img src="img/logo.jpg" alt="" />
+            <span>SPRING / SUMMER 2020</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comment">
+      <h2 class="comment__title">Khách hàng nhận xét</h2>
+      <div class="comment__content">
+        <div class="comment__content--text">
+          <div class="comment__content--text-item">
+            <span class="comment-item-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+              rerum ut, ea omnis molestias nostrum facilis adipisci debitis
+              delectus reprehenderit harum doloremque, maiores rem. Quod facere
+              nostrum corrupti architecto alias!
+            </span>
+            <span class="comment-item-author">John dou</span>
+          </div>
+          <!-- <div class="comment__content--text-item">
+                        <span class="comment-item-content">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic soluta asperiores fugit, tempore enim corporis non vitae quod voluptatem magni ducimus voluptate dolorem expedita ratione provident culpa perspiciatis alias quam.
+                        </span>
+                        <span class="comment-item-author">Bill Gate</span>
+
+
+                      </div> -->
+        </div>
+        <button class="comment__content--button button1">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <button class="comment__content--button button2">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+        <div class="comment__content--dot">
+          <span class="dot-item active">&nbsp;</span>
+          <span class="dot-item">&nbsp;</span>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2 class="contact__title">Liên lạc</h2>
+      <span class="contact__content"
+        >Liên hệ với chúng tôi nếu bạn có câu hỏi hoặc nhận xét và chúng tôi sẽ
+        liên hệ lại với bạn sớm nhất nếu có thể</span
+      >
+      <button class="contact__button">Gửi email</button>
+      <div class="contact__backtotop">
+        <span class="contact__backtotop--1">&nbsp;</span>
+        <span class="contact__backtotop--2">&nbsp;</span>
+      </div>
+    </section>
+    <section class="license">
+      <span>A project made by TuyenNv, license by ChibaoSinger</span>
+      <div class="license__link">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-git" aria-hidden="true"></i>
+      </div>
+    </section>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

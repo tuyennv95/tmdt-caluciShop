@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+
+@import "header.scss";
+@import "slider.scss";
+@import "variable.scss";
+@import "introduce.scss";
+@import "mixins.scss";
+@import "show.scss";
+@import "product_hot.scss";
+@import "collection.scss";
+@import "comment.scss";
+@import "contact.scss";
+@import "license.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'Cabin', sans-serif;
+}
+a {
+  text-decoration: none;
+}

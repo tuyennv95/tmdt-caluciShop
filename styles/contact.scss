@@ -1,0 +1,48 @@
+.contact {
+  width: 100%;
+  background-color: $color-background-show;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10rem;
+  position: relative;
+  &__title {
+    font-size: 3rem;
+    color: $color-text-h2;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-top: 8rem;
+  }
+  &__content {
+    font-size: 1.4rem;
+    width: 40%;
+    padding-top: 3rem;
+    display: block;
+    margin: 0 auto;
+  }
+  button {
+    @include button;
+    margin-top: 3rem;
+  }
+  &__backtotop {
+    display: flex;
+    padding-top: 6rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    span {
+      width: 1.3rem;
+      border-top: 2px solid rgb(4, 6, 69);
+      cursor: pointer;
+    }
+    &--1 {
+      transform: rotate(-45deg);
+      position: absolute;
+    }
+    &--2 {
+      transform: rotate(45deg);
+      position: absolute;
+      
+
+    }
+  }
+}

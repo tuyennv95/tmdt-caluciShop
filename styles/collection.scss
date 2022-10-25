@@ -1,0 +1,84 @@
+.collection {
+  width: 100%;
+  max-width: 135rem;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding-bottom: 5rem;
+  &_block {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10rem;
+  }
+  &__text {
+    width: 48%;
+
+    &--title {
+      color: $color-text-h2;
+      font-size: 3rem;
+      font-family: Roboto;
+      font-weight: 100;
+      text-transform: uppercase;
+      margin-top: 8rem;
+    }
+    &--content {
+      font-size: 1.4rem;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 50;
+      display: inline-block;
+      line-height: 2rem;
+      padding-top: 3rem;
+      width: 80%;
+      display: block;
+    }
+    &--button {
+      @include button;
+      margin-top: 3rem;
+    }
+  }
+  &__img {
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    height: 40rem;
+    &--image {
+      width: 45%;
+      position: relative;
+      &-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: -webkit-linear-gradient(90deg, #d040ce7d, #7fe4d171);
+        img{
+            width: 90%;
+            height: 70%;
+            object-fit: cover;
+            position: absolute;
+            top:50%;
+            left: -4rem;
+            transform: translateY(-50%);
+        }
+      }
+    }
+    &--logo {
+      width: 45%;
+      text-align: center;
+
+      img{
+          width:70%;
+          display: block;
+          padding-top: 5rem;
+          margin: 0 auto;
+      }
+      span{
+          color: black;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          font-weight: 700;
+      }
+    }
+  }
+}

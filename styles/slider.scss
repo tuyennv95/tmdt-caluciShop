@@ -1,0 +1,159 @@
+.slider {
+  width: 100%;
+  max-width: 135rem;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -8rem;
+  z-index: 10;
+  position: relative;
+  background-color: #5a5a64e5;
+  z-index: 900;
+  animation: onload 2s forwards;
+
+  &:after {
+    content: "";
+    height: 15px;
+    position: absolute;
+    border-right: 2px solid $color-after-bottom;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  ///////////////////////////////////////////////
+
+  .slider__font {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    &::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #5a5a64;
+      z-index: 900;
+      position: absolute;
+      animation: sliderImage 2s forwards;
+      animation-delay: 1s;
+    }
+    .slider__font--img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      background-size: cover;
+      background-color: #5a5a64e5;
+      opacity: 0.3;
+      
+    }
+  }
+
+  &__slide {
+    width: 66%;
+    height: 88%;
+    // background-color: $font-hover-text-color;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 901;
+    overflow: hidden;
+
+    &--item {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      z-index: 910;
+
+      position: absolute;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.3;
+        transition: all 0.5s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    &--opacity {
+      width: 100%;
+      height: 100%;
+      z-index: 905;
+      background-color: #5a5a64;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    button {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      background-color: $color-button-slider;
+      position: absolute;
+      transition: all 0.5s;
+      z-index: 999;
+      cursor: pointer;
+      &:hover {
+        background-color: $color-button-hover-slider;
+      }
+      i {
+        color: white;
+        font-size: 1.6rem;
+      }
+    }
+    #prev {
+      bottom: 10rem;
+      right: 2rem;
+    }
+    #next {
+      bottom: 3rem;
+      right: 2rem;
+    }
+  }
+  h1 {
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-weight: 50;
+    text-transform: uppercase;
+    z-index: 998;
+    color: $color-text-title-slider;
+    top: 50%;
+    left: 5rem;
+    transform: translateY(-50%);
+    font-size: 6rem;
+  }
+}
+
+.moveRight {
+  animation: moveRight 3s;
+}
+.moveLeft {
+  animation: moveLefr 1s;
+}
+@keyframes onload {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes sliderImage {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
