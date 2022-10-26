@@ -7,44 +7,46 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="stylesheet" href="build/index.css" />
     <title>CaFiNa</title>
   </head>
   <body>
     <section class="header">
-      <div class="header__logo">
+      <div class="header__logo menu-item1">
         <a href=""
           ><img src="img/logo.png" alt="" class="header__logo--img"
         /></a>
       </div>
       <div class="header__menu">
         <ul class="header__menu--list">
-          <li class="header__menu--item">
+          <li class="header__menu--item menu-item2">
             <a class="header__menu--item--link" href="">Trang chủ</a>
           </li>
-          <li class="header__menu--item">
+          <li class="header__menu--item menu-item3">
             <a class="header__menu--item--link" href="">của hàng</a>
           </li>
-          <li class="header__menu--item">
+          <li class="header__menu--item menu-item4">
             <a class="header__menu--item--link" href="">tài khoản</a>
           </li>
-          <li class="header__menu--item">
+          <li class="header__menu--item menu-item5">
             <a class="header__menu--item--link" href="">giỏ hàng</a>
           </li>
-          <li class="header__menu--item">
+          <li class="header__menu--item menu-item6">
             <a class="header__menu--item--link" href="">liên hệ</a>
           </li>
         </ul>
       </div>
       <div class="header__other">
         <div class="header__other-block">
-          <div class="header__other_input">
-            <input type="text" placeholder="Tìm kiếm..." />
+          <div class="header__other_input ">
+            <input class="menu-item7" type="text" placeholder="Tìm kiếm..." />
           </div>
           <div class="header__other_cart">
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            <i class="fa fa-shopping-bag menu-item8" aria-hidden="true"></i>
           </div>
-          <div class="header__other_acc">
+          <div class="header__other_acc  menu-item9">
             <img class="header_other_acc--img" src="img/acc.jpg" alt="" />
 
             <div class="hover_acc--img" id="hover_acc--img">
@@ -75,34 +77,49 @@
       <div class="slider__font">
         <img src="img/slider__font.jpg" class="slider__font--img" />
       </div>
-      <h1>
+      <h1 class="slider__slide--heading">
         Sự lựa chọn cho <br />
         mọi sở thích
       </h1>
       <div class="slider__slide">
+        <div class="slider__slide--dot">
+          <span class="dot dotActive"></span>
+          <span class="dot "></span>
+          <span class="dot "></span>
+          <span class="dot "></span>
+          <span class="dot "></span>
+        </div>
         <div class="slider__slide--opacity">&nbsp;</div>
         <div class="slider__slide--item">
-          <img
-            class="slider__slide--img"
-            src="img/slide10.jpg"
+          <div
             id="classLast"
-          />
-
-          <img class="slider__slide--img" src="img/slide6.jpg" />
-
-          <img class="slider__slide--img" src="img/slide7.jpg" />
-
-          <img class="slider__slide--img" src="img/slide8.jpg" />
-
-          <img class="slider__slide--img" src="img/slide9.jpg" />
-
-          <img class="slider__slide--img" src="img/slide10.jpg" />
-
-          <img
-            class="slider__slide--img"
-            src="img/slide6.jpg"
+            class="slider__slide--item--img "
+            
+          >
+            <img class="slider__slide--img " src="img/slide6.jpg" />
+          </div>
+          <div class="slider__slide--item--img" >
+            <img class="slider__slide--img" src="img/slide7.jpg" />
+          </div>
+          <div
+            class="slider__slide--item--img"
+            
+          >
+            <img class="slider__slide--img" src="img/slide8.jpg" />
+          </div>
+          <div
+            class="slider__slide--item--img"
+            
+          >
+            <img class="slider__slide--img" src="img/slide9.jpg" />
+          </div>
+          <div
             id="classFirst"
-          />
+            class="slider__slide--item--img"
+            
+          >
+            <img class="slider__slide--img" src="img/slide10.jpg" />
+          </div>
         </div>
 
         <button id="next">
@@ -114,8 +131,8 @@
       </div>
     </section>
     <section class="introduce">
-      <div class="introduce__slider">
-        <div class="introduce__slider_img">
+      <div class="introduce__slider ">
+        <div class="introduce__slider_img animate-bottom">
           <img
             src="img/slide5.jpg"
             alt=""
@@ -169,21 +186,21 @@
         </button>
       </div>
       <div class="introduce__text">
-        <h2 class="introduce__text--title">Giới thiệu</h2>
-        <span class="introduce__text--content"
+        <h2 class="introduce__text--title animate-bottom1">Giới thiệu</h2>
+        <span class="introduce__text--content animate-bottom2"
           >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
           repellendus nihil earum facilis totam nulla itaque ratione eligendi
           sed repellat, officia voluptatum blanditiis amet provident magni dicta
           consequatur corporis perspiciatis?</span
         >
-        <button class="introduce__text--btn">Đọc thêm</button>
+        <button class="introduce__text--btn animate-bottom3">Đọc thêm</button>
       </div>
     </section>
     <section class="show">
-      <h2 class="show__title">Sản phẩm mới</h2>
+      <h2 class="show__title animate-bottom">Sản phẩm mới</h2>
       <div class="show__product">
         <!-- ------------------------------- -->
-        <div class="show__product--item">
+        <div class="show__product--item animate-bottom1">
           <img src="img/show1.jpg" alt="" class="" />
           <div class="show__product--item-note">
             <div class="product--new">New</div>
@@ -200,7 +217,7 @@
           </div>
         </div>
         <!-- ------------------------------- -->
-        <div class="show__product--item">
+        <div class="show__product--item animate-bottom2">
           <img src="img/show2.jpg" alt="" class="" />
           <div class="show__product--item-note">
             <div class="product--new">New</div>
@@ -217,7 +234,7 @@
           </div>
         </div>
         <!-- ------------------------------- -->
-        <div class="show__product--item">
+        <div class="show__product--item animate-bottom3">
           <img src="img/show3.jpg" alt="" class="" />
           <div class="show__product--item-note">
             <div class="product--new">New</div>
@@ -234,7 +251,7 @@
           </div>
         </div>
         <!-- ------------------------------- -->
-        <div class="show__product--item">
+        <div class="show__product--item animate-bottom4">
           <img src="img/show4.jpg" alt="" class="" />
           <div class="show__product--item-note">
             <div class="product--new">New</div>
@@ -251,7 +268,7 @@
           </div>
         </div>
         <!-- ------------------------------- -->
-        <div class="show__product--item">
+        <div class="show__product--item animate-bottom5">
           <img src="img/show5.jpg" alt="" class="" />
           <div class="show__product--item-note">
             <div class="product--new">New</div>
@@ -268,7 +285,7 @@
           </div>
         </div>
         <!-- ------------------------------- -->
-        <div class="show__product--item">
+        <div class="show__product--item animate-bottom6">
           <img src="img/show6.jpg" alt="" class="" />
           <div class="show__product--item-note">
             <div class="product--new">New</div>
@@ -285,7 +302,7 @@
           </div>
         </div>
         <!-- ------------------------------- -->
-        <div class="show__product--item">
+        <div class="show__product--item animate-bottom7">
           <img src="img/show7.jpg" alt="" class="" />
           <div class="show__product--item-note">
             <div class="product--new">New</div>
@@ -302,7 +319,7 @@
           </div>
         </div>
         <!-- ------------------------------- -->
-        <div class="show__product--item">
+        <div class="show__product--item animate-bottom8">
           <img src="img/show8.jpg" alt="" class="" />
           <div class="show__product--item-note">
             <div class="product--new">New</div>

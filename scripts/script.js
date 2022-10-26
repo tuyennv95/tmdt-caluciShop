@@ -1,3 +1,59 @@
+window.sr = new ScrollReveal();
+
+sr.reveal('.animate-bottom',{
+    origin: 'bottom',
+    duration:2000,
+    distance: '25rem',
+    delay:300,
+});
+sr.reveal('.animate-bottom1',{
+    origin: 'bottom',
+    duration:1000,
+    distance: '10rem',
+    delay:300
+});
+sr.reveal('.animate-bottom2',{
+    origin: 'bottom',
+    duration:1000,
+    distance: '10rem',
+    delay:400
+});
+sr.reveal('.animate-bottom3',{
+    origin: 'bottom',
+    duration:1000,
+    distance: '10rem',
+    delay:500
+});
+sr.reveal('.animate-bottom4',{
+    origin: 'bottom',
+    duration:1000,
+    distance: '10rem',
+    delay:600
+});
+sr.reveal('.animate-bottom5',{
+    origin: 'bottom',
+    duration:1000,
+    distance: '10rem',
+    delay:700
+});
+sr.reveal('.animate-bottom6',{
+    origin: 'bottom',
+    duration:1000,
+    distance: '10rem',
+    delay:800
+});
+sr.reveal('.animate-bottom7',{
+    origin: 'bottom',
+    duration:1000,
+    distance: '10rem',
+    delay:900
+});
+sr.reveal('.animate-bottom8',{
+    origin: 'bottom',
+    duration:1000,
+    distance: '10rem',
+    delay:1000
+});
 // ------------Scrol menu------------
 window.onscroll = function(){
     if(document.body.scroll > 20 || document.documentElement.scrollTop > 20){
@@ -34,42 +90,49 @@ iconAcc.addEventListener("mouseout", function () {
 //     getItem.style.display = "none";
 //   }, 1000);
 });
-
+// -----slider---------
 
 const imgElement = document.querySelector(".slider__slide--item");
-const sliderElement = document.querySelectorAll(".slider__slide--item img");
+const sliderElement = document.querySelectorAll(".slider__slide--item--img");
 const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
 
-let currentSlider = 1;
-const size = imgElement.clientWidth;
-imgElement.style.transform = "translateX(" + -size * currentSlider + "px)";
+let currentSlider = 0;
+const size = sliderElement[0].clientWidth;
+console.log('🚀 ~ size', size);
+// imgElement.style.transform = "translateX(" + -size * currentSlider + "px)";
 
 next.addEventListener("click", () => {
-  if (currentSlider >= sliderElement.length - 1) return;
+  if (currentSlider >= sliderElement.length -1) return;
   imgElement.style.transition = "transform 1s ease-in-out";
   currentSlider++;
   imgElement.style.transform = "translateX(" + -size * currentSlider + "px)";
+  const dot = document.querySelectorAll(".dot")
+  dot[currentSlider].classList.add("dotActive");
+  dot[currentSlider-1].classList.remove("dotActive");
 });
 prev.addEventListener("click", () => {
   if (currentSlider <= 0) return;
   imgElement.style.transition = "transform 1s ease-in-out";
   currentSlider--;
-
   imgElement.style.transform = "translateX(" + -size * currentSlider + "px)";
+  const dot = document.querySelectorAll(".dot")
+  dot[currentSlider+1].classList.remove("dotActive");
+  dot[currentSlider].classList.add("dotActive");  
 });
-imgElement.addEventListener("transitionend", () => {
-  if (sliderElement[currentSlider].id === "classFirst") {
-    imgElement.style.transition = "none";
-    currentSlider = sliderElement.length - currentSlider;
-    imgElement.style.transform = "translateX(" + -size * currentSlider + "px)";
-  }
-  if (sliderElement[currentSlider].id === "classLast") {
-    imgElement.style.transition = "none";
-    currentSlider = sliderElement.length - 2;
-    imgElement.style.transform = "translateX(" + -size * currentSlider + "px)";
-  }
-});
+
+// imgElement.addEventListener("transitionend", () => {
+//   if (sliderElement[currentSlider].id === "classFirst") {
+//     imgElement.style.transition = "none";
+//     currentSlider = sliderElement.length - currentSlider;
+//     imgElement.style.transform = "translateX(" + -size * currentSlider + "px)";
+//   }
+//   if (sliderElement[currentSlider].id === "classLast") {
+//     imgElement.style.transition = "none";
+//     currentSlider = sliderElement.length - 2;
+//     imgElement.style.transform = "translateX(" + -size * currentSlider + "px)";
+//   }
+// });
 
 // -------------------Slidẻ introducer-----------
 const sliderIntroduceElement = document.querySelector(".introduce__slider_img");
@@ -187,3 +250,4 @@ prevSlideProductHot.addEventListener("click", () => {
 //         sliderProductHotElement.style.transform = 'translateX(' + (-sizeSlideProductHot * currentSliderProductHot - 20 * currentSliderProductHot) + 'px )';
 //     }
 // })
+// --------------delay animation---------

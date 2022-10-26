@@ -243,3 +243,61 @@
 .moveIn {
   animation: hover-acc 1s;
 }
+@media screen and (min-width: 1200px) {
+  .menu-item1 {
+    opacity: 0;
+    animation: menuItem1 0.5s forwards;
+    animation-delay: 1s;
+  }
+  .menu-item2 {
+    opacity: 0;
+    animation: menuItem1 0.5s forwards;
+    animation-delay: 1.1s;
+  }
+  .menu-item3 {
+    opacity: 0;
+    animation: menuItem1 0.5s forwards;
+    animation-delay: 1.2s;
+  }
+  .menu-item4 {
+    opacity: 0;
+    animation: menuItem1 0.5s forwards;
+    animation-delay: 1.3s;
+  }
+  .menu-item5 {
+    opacity: 0;
+    animation: menuItem1 0.5s forwards;
+    animation-delay: 1.4s;
+  }
+  .menu-item6 {
+    opacity: 0;
+    animation: menuItem1 0.5s forwards;
+    animation-delay: 1.5s;
+  }
+  .menu-item7{
+    opacity: 0;
+    animation: menuItem1 0.5s forwards;
+    animation-delay: 1.6s;
+  }
+  .menu-item8{
+    opacity: 0;
+    animation: menuItem1 0.5s forwards;
+    animation-delay: 1.7s;
+  }
+  .menu-item9{
+    opacity: 0;
+    animation: menuItem1 0.5s forwards;
+    animation-delay: 1.8s;
+  }
+  
+}
+@keyframes menuItem1 {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
